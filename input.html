@@ -78,6 +78,14 @@
         background-color: transparent;
         font-size: 20px;
       }
+
+      form {
+        border-style: solid;
+        border-width: 3px;
+        border-left-width: 3px;
+        border-right-width: 3px;
+        border-color: rgb(0, 0, 0);
+      }
     </style>
   </head>
   <body style="background-color: #9c9c9c">
@@ -171,6 +179,18 @@
           />
           <label for="alouettes">Montreal Alouettes</label><br />
         </fieldset>
+
+        <fieldset>
+          <legend>
+            What City Should Have A CFL Team? <br />
+            Design Your Own Hypothetical Team:
+          </legend>
+          <label for="city">City Name:</label>
+          <input type="text" id="city" name="city" /> <br />
+          <label for="colour">Team Colour:</label>
+          <input type="color" id="colour" name="colour" />
+        </fieldset>
+        <input type="submit" class="center" />
       </form>
     </main>
   </body>
