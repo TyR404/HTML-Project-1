@@ -104,7 +104,7 @@
 
     <main>
       <p style="text-align: center">
-        This page is intended to gather opinions on the CFL.
+        *This page is intended to gather opinions on the CFL.*
         <strong>Do Not</strong> enter personal information!
       </p>
 
@@ -120,6 +120,8 @@
         "
         method="get"
       >
+      <!--The radio buttons are used to give the user a list to choose from, and only allow 
+        1 input/answer. in this case, im using it to get the user's favourite team-->
         <fieldset style="width: 300px">
           <legend>What's Your Favourite CFL Team?</legend>
 
@@ -189,15 +191,23 @@
             Design Your Own Hypothetical Team:
           </legend>
 
+          <!--The text input is used to get a text response from the user. in this case, 
+          i'm getting the user to input what city should also have a CFL team. this option 
+          doesnt limit what the user can choose-->
           <label for="city">City Name:</label>
           <input type="text" id="city" name="city" /> <br />
 
+            <!--The colour input is used to get a hexidecimal response from the user. in this 
+            case, i'm getting the user to input what colour team they think that their city 
+            should have-->
           <label for="colour">Team Colour:</label>
           <input type="color" id="colour" name="colour" />
         </fieldset>
 
         <br />
 
+        <!--This input allows the user to submit their previous responses and I'm using it for 
+        that exact reason-->
         <input type="submit" class="center" />
       </form>
 
@@ -224,5 +234,13 @@
         Photo Credit:"https://en.wikipedia.org/wiki/Atlantic_Schooners"
       </p>
     </main>
+
+  <footer>
+    <p style="text-align: center">You Can Find The Official CFL Page At:</p>
+
+    <a href="https://www.cfl.ca/" target="_blank">CFL.ca</a>
+
+  </footer>
+
   </body>
 </html>
